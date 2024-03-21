@@ -10,8 +10,8 @@ EXPOSE 8000
 EXPOSE 80
 EXPOSE 3000
 
-RUN sudo apt update
-RUN sudo apt install nginx
-RUN sudo apt install default-jre
+RUN apt update
+RUN apt install nginx
+RUN apt install default-jre
 
 CMD ["bash", "main.sh"]
